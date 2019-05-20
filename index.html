@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="Lt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Dainius Jaraminas JP18-3" />
+  <!-- bootstrap4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Projektas ISS koordinates pagal global map</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- header -->
+        <header class="form-group">
+          <div class="d-inline">
+            <img src="./IMG/iss_logo.jpg" width="80" height="80" alt="iss_logo" />
+          </div>
+          <div class="d-inline">
+            Taptautinės kosminės stoties (ISS) koordinatės Žemės žemėlapyje 
+          </div>
+          <div class="d-inline">
+            <img src="./IMG/iss_logo.jpg" width="80" height="80" alt="iss_logo" />
+          </div>
+        </header>
+        <!-- implement ISS position -->
+        <div class="form-group">
+          <div id="mapid"></div>
+        </div>
+        <div class="form-group">
+          <label>Šiuo metu TKS koordinatės yra: (laikas realus, intervalas: 5 sek.)</label>
+          <button type="button" class="btn btn-primary" id="id_btn01">
+            Parodyti
+          </button>
+          <h4 id="id_output01">/---/</h4>
+        </div>
+        <hr />
+        <!-- implement ISS people -->
+        <div class="form-group">
+          <label>Šiuo metu TKS borto ekipaže yra:</label>
+          <button type="button" class="btn btn-primary" id="id_btn02">
+            Parodyti
+          </button>
+          <h5 id="id_output02">/---/</h5>
+        </div>
+        <hr>
+        <!-- footer -->
+        <footer class="form-group">         
+            <a href="https://www.n2yo.com/">*** Nuoroda gauti daugiau informacijos apie TKS ir žemės palydovus ***</a>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!-- leaflet script -->
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+  <script src="index.js"></script>
+  <!-- bootstrap4 script -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
